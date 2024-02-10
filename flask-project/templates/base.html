@@ -1,0 +1,16 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>{% block title %}Test{% endblock %} - PIC16B Website</title>
+<nav>
+  <h1>PIC16B Example!</h1>
+  <!-- <b>Navigation:</b> -->
+  <li><a href="{{ url_for('main') }}">Submit Message</a></li>
+  <li><a href="{{ url_for('ask')}}">View Message</a></li>
+  <li><a href="{{ url_for('deleted')}}">Delete Messages</a></li>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>

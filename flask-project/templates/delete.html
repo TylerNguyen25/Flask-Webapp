@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Deleted Messages{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+{% if note %}
+<b class = red>{{note}}</b>
+{% endif %}
+{% endblock %}

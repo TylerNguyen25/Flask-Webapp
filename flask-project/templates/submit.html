@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Submit Messages{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+      Your message:<br>
+      <input name="message" id="message"><br>
+
+      Your name or handle:<br>
+      <input name="name" id="name"><br>
+
+      <input type="submit" value="Submit form">
+  </form>
+  {% if note %}
+  <b class = green>{{note}}</b>
+  {% endif %}
+{% endblock %}

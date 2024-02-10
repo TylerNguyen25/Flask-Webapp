@@ -1,0 +1,47 @@
+html{
+    font-family: Garamond, serif;
+}
+
+h1{
+    font-size: 32px;
+    text-align:center;
+    background-color:#C39E6D;
+}
+
+li{
+    background-color: #55565A;
+    font-size: 22px;
+    text-align:center;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+}
+
+a:visited {
+    background-color: cyan;
+  }
+  
+a:hover {
+    background-color: lightgreen;
+  }
+
+p{
+    font-size: 22px;
+}
+
+.submit-link:hover,
+.view-link:hover {
+  background-color: #0056b3;
+}
+
+.green {
+    color:white;
+    background-color: green;
+}
+
+.red{
+    color:white;
+    background-color: red;
+}
